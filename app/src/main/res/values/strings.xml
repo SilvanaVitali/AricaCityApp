@@ -8,19 +8,18 @@
     <string name="category_4">DEPORTES</string>
 
     <string name="name_1">Terminal Asoagro Arica</string>
-    <string name="description_1">El Terminal Asoagro es un lugar emblemático de Arica, mercado donde
+    <string name="description_1">\t\tEl Terminal Asoagro es un lugar emblemático de Arica, mercado donde
         confluye toda la riqueza agrícola de la región. Encontrarás productos locales, originarios
         e los distintos pisos geográficos, desde carne de alpaca altiplánica, pasando por variedades
         de papas y choclos de la precordillera, hasta tomates o aceitunas del Valle de Azapa.
-        Viajarás y descubrirás parte del patrimonio gastronómico ariqueño visitando el “Agro”.
-
-        El terminal está dividido en tres partes. Una corresponde al mercado de frutas y verduras,
+        Viajarás y descubrirás parte del patrimonio gastronómico ariqueño visitando el “Agro”.\n\n
+        \t\tEl terminal está dividido en tres partes. Una corresponde al mercado de frutas y verduras,
         otra a una feria de ropa de segunda mano, muebles y utensilios varios (pulgas), los dos
         sectores están unidos por un patio de comida popular ofreciendo platos de origen
         andino.</string>
 
     <string name="name_2">Poblado Artesanal</string>
-    <string name="description_2">El poblado, creado con la intención de concentrar el trabajo de
+    <string name="description_2">\t\tEl poblado, creado con la intención de concentrar el trabajo de
         artesanos de la región, es una réplica del pueblo de Parinacota, en Putre. Cuenta con una
         plaza central, una iglesia y un campanario, además de viviendas construidas según la
         disposición de los hogares andinos. Las construcciones están hechas en su mayoría de adobe,
@@ -31,13 +30,13 @@
         pueden verse ejemplares del picaflor de Arica.</string>
 
     <string name="name_3">Muelle Pesquero</string>
-    <string name="description_3">Su ubicación exacta está en la calle Máximo Lira Nº 510 y puede
+    <string name="description_3">\t\tSu ubicación exacta está en la calle Máximo Lira Nº 510 y puede
         acceder al muelle caminando por el Paseo 21 de Mayo hasta el final (frente a la estación
         del Ferrocarril Arica a La Paz), o cualquier transporte público tomando como referencia la
         tradicional estación del tren. Ver referencia en el mapa del Centro de Arica.</string>
 
     <string name="name_4">Edificios Históricos</string>
-    <string name="description_4">Describimos y ubicamos ciertos espacios y edificios históricos
+    <string name="description_4">\t\tDescribimos y ubicamos ciertos espacios y edificios históricos
         característicos de épocas emblemáticas para la historia de nuestra ciudad, siendo éstos
         portadores significativos de nuestra identidad.
         Estos lugares se encuentran enlazados a través de dos circuitos patrimoniales que usted
@@ -48,33 +47,33 @@
         antigüedad.</string>
 
     <string name="name_5">Humedal Río Lluta</string>
-    <string name="description_5">Ubicado a pocos minutos de la ciudad de Arica, en la región de
+    <string name="description_5">\t\tUbicado a pocos minutos de la ciudad de Arica, en la región de
         Arica y Parinacota, el Humedal del Río Lluta se convierte en un punto de especial atención
         medioambiental. El arribo del Lluta hasta la costa ariqueña crea un ambiente con
         particulares características. Rodeado por el desierto más árido del mundo, el Atacama, pero
         con un clima estable durante todo el año, el humedal de la desembocadura se convierte en el
         destino de cientos de especies de aves migratorias que llegan desde el hemisferio norte
-        huyendo del clima frío.
+        huyendo del clima frío.\n\n
 
-        A 10 km del centro de Arica y a 7 km del hito 1 en la frontera con Perú, en el humedal se
+        \t\tA 10 km del centro de Arica y a 7 km del hito 1 en la frontera con Perú, en el humedal se
         encuentran unas 20 especies nativas. Entre ellas destacan las chilcas, breas, totoras y
-        junquillos. La grama salada es la más común en el lugar.
+        junquillos. La grama salada es la más común en el lugar.\n\n
 
-        Las plantas que se encuentran en la zona contrastan fuertemente con la aridez del desierto
+        \t\tLas plantas que se encuentran en la zona contrastan fuertemente con la aridez del desierto
         que rodea el paisaje. El ecosistema que alberga a las aves locales y migratorias está
-        formado por varias lagunas, con una mezcla periódica entre agua dulce y salada.
+        formado por varias lagunas, con una mezcla periódica entre agua dulce y salada.\n\n
 
-        La flora del lugar tiene la característica de no depender del macroclima, sino que se ve
+        \t\tLa flora del lugar tiene la característica de no depender del macroclima, sino que se ve
         determinada por las condiciones puntuales de la zona. A lo largo de Chile, los humedales se
         distribuyen como un arreglo lineal en la costa, lo que sirve como un corredor para las
         migraciones de aves.</string>
 
     <string name="name_6">Cuevas de Anzota</string>
-    <string name="description_6">Las Cuevas de Anzota quedan a 10 km hacia el suroeste del morro de
+    <string name="description_6">\t\tLas Cuevas de Anzota quedan a 10 km hacia el suroeste del morro de
         Arica, a 20 minutos en automóvil, y, como en todas las actividades al aire libre en la
-        región, tomar medidas para protegerse del sol es indispensable.
+        región, tomar medidas para protegerse del sol es indispensable.\n\n
 
-        Actualmente las Cuevas de Anzota son administradas por la Corporación Municipal costa
+        \t\tActualmente las Cuevas de Anzota son administradas por la Corporación Municipal costa
         Chinchorro. El ingreso es gratuito, y se mantienen en un horario de 9 de la mañana a 18:30
         horas. Al registrarse, se hace entrega de un casco, pues pequeñas piedras suelen caer desde
         lo alto. Si bien se mantienen abiertas la mayor parte del año, factores como los avisos de
@@ -82,25 +81,25 @@
         público y periódicamente se organizan visitas guiadas sin costo.</string>
 
     <string name="name_7">Morro de Arica</string>
-    <string name="description_7">La ubicación estratégica del Morro de Arica lo convirtió en el
+    <string name="description_7">\t\tLa ubicación estratégica del Morro de Arica lo convirtió en el
         escenario de la batalla del 7 de junio de 1880, conocida como el Asalto y Toma del Morro,
         la que significó la soberanía de Chile sobre la región tras la Guerra del Pacífico. Soldados
         de ambos bandos fueron homenajeados por su valentía, bautizando numerosas calles en su
-        honor, especialmente en el sector céntrico de la ciudad, además de bustos y estatuas.
+        honor, especialmente en el sector céntrico de la ciudad, además de bustos y estatuas.\n\n
 
-        Parte de lo que se vivió en el histórico peñón se encuentra documentado en el Museo
+        \t\tParte de lo que se vivió en el histórico peñón se encuentra documentado en el Museo
         Histórico y de Armas del Morro de Arica, ubicado en la cima del morro y fue inaugurado en
         1974. Allí se pueden apreciar uniformes, indumentaria y documentos de la época, además de
         una exhibición de las armas utilizadas por el Ejército Chileno desde finales del siglo XIX
-        hasta 1960.
+        hasta 1960.\n\n
 
-        El museo cuenta con visitas guiadas y un sistema de visualizaciones con Realidad Aumentada.
+        \t\tEl museo cuenta con visitas guiadas y un sistema de visualizaciones con Realidad Aumentada.
         En los alrededores pueden observarse cañones antiguos y un monumento al soldado desconocido.
         A pocos metros se encuentra el Cristo de la Concordia, también llamado de la Paz, monumento
         de 15 toneladas y 11 metros de alto que celebra la paz entre Chile y Perú.</string>
 
     <string name="name_8">Playa El Laucho</string>
-    <string name="description_8">A tan solo 10 minutos de la ciudad, en el borde costero, se
+    <string name="description_8">\t\tA tan solo 10 minutos de la ciudad, en el borde costero, se
         encuentra la Playa el Laucho, uno de los tres balnearios habilitados durante todo el año en
         la región de Arica y Parinacota, junto a la playa La Lisera y playa Chinchorro. Naturalmente
         protegida del viento costero, posee un suave oleaje y arenas blancas. Con una vista
@@ -109,7 +108,7 @@
         una interesante oferta de locales en sus cercanías.</string>
 
     <string name="name_9">Playa Chinchorro</string>
-    <string name="description_9">Con una enorme lista de panoramas, actividades y ofertas para ariqueños y
+    <string name="description_9">\t\tCon una enorme lista de panoramas, actividades y ofertas para ariqueños y
         turistas, la Playa Chinchorro, ubicada a 10 minutos en auto desde el centro de Arica, ofrece
         durante todo el año una experiencia ideal para toda la familia. Durante el día se puede ver
         a gran cantidad de veraneantes recorriendo la costa, o disfrutando del paseo peatonal.
@@ -121,20 +120,20 @@
         ciudad del extremo norte de Chile.</string>
 
     <string name="name_10">Playa La Lisera</string>
-    <string name="description_10">Playa La Lisera, una de las postales más conocidas de la ciudad de
-        Arica, es uno de los imperdibles de la región de Arica y Parinacota.
+    <string name="description_10">\t\tPlaya La Lisera, una de las postales más conocidas de la ciudad de
+        Arica, es uno de los imperdibles de la región de Arica y Parinacota.\n\n
 
-        De forma circular y semicerrada, en sus 150 metros de borde cuenta con arenas blancas y
+        \t\tDe forma circular y semicerrada, en sus 150 metros de borde cuenta con arenas blancas y
         suaves. Sus aguas, extremadamente tranquilas, sin oleaje y de poca profundidad, la
         convierten en el lugar ideal para visitar en familia. Junto a la playa El Laucho y playa
-        Chinchorro, es uno de los tres balnearios aptos para el baño de la ciudad.
+        Chinchorro, es uno de los tres balnearios aptos para el baño de la ciudad.\n\n
 
-        Su morfología, de una poza natural, se complementa con el entorno de paseo costero, siendo
+        \t\tSu morfología, de una poza natural, se complementa con el entorno de paseo costero, siendo
         uno de los panoramas favoritos de turistas y locales a lo largo de todo el año. La Lisera se
         encuentra a sólo 15 minutos del centro de la ciudad.</string>
 
     <string name="name_11">Playa Las Machas</string>
-    <string name="description_11">Caminando por el litoral al norte de la Playa Chinchorro se
+    <string name="description_11">\t\tCaminando por el litoral al norte de la Playa Chinchorro se
         encuentra la Playa las Machas, una enorme extensión de arenas en las que cientos de aves
         marinas descansa y emprenden vuelo. Este sector de la costa ariqueña, no apta para el baño
         debido a su fuerte oleaje, es sin embargo visitada constantemente por los turistas, ya sea
@@ -145,7 +144,7 @@
         machas son hasta hoy ingrediente para preparaciones gastronómicas de la región.</string>
 
     <string name="name_12">Surf</string>
-    <string name="description_12">No sólo los surfistas expertos encontrarán olas para su deleite en
+    <string name="description_12">\t\tNo sólo los surfistas expertos encontrarán olas para su deleite en
         las costas de Arica y Parinacota. Los 20 km de playa permiten también que prácticas como el
         voleibol playa, rugby, natación, windsurf, paddle y bodyboard, entre otros deportes
         náuticos, se realicen durante todo el año en el borde costero. Las escuelas de natación para
@@ -154,19 +153,19 @@
         costero, especialmente durante el verano.</string>
 
     <string name="name_13">Parapente</string>
-    <string name="description_13">Las características geográficas de Arica además permiten practicar
+    <string name="description_13">\t\tLas características geográficas de Arica además permiten practicar
         el parapente cerca de la costa, obteniendo una experiencia increíble y una vista panorámica
         del paseo costero. Este se realiza generalmente a mediodía, y no es raro avistar los
         despegues desde la playa. </string>
 
     <string name="name_14">Pesca</string>
-    <string name="description_14">La pesca es otra de las actividades preferidas por los
+    <string name="description_14">\t\tLa pesca es otra de las actividades preferidas por los
         veraneantes. Al practicarla, se debe tener cuidado de no realizarla en sectores protegidos,
         como el humedal del rio Lluta. En los roqueríos del sector sur, en cambio, es usual ver
         aficionados a la pesca en diversas modalidades durante las mañanas.</string>
 
     <string name="name_15">Trekking y Senderismo</string>
-    <string name="description_15">La zona de los valles y del altiplano ofrece un sinnúmero de rutas
+    <string name="description_15">\t\tLa zona de los valles y del altiplano ofrece un sinnúmero de rutas
         para practicar trekking y senderismo, además de entregar una gran oportunidad para conocer
         más sobre la historia de la región. Las posibilidades van desde los valles como Azapa, Lluta
         y Codpa, con caminos para recorrer a pie, hasta lugares como el Parque Nacional Lauca y la
