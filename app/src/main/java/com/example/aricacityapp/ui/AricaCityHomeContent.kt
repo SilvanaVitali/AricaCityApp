@@ -32,7 +32,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.aricacityapp.R
 import com.example.aricacityapp.data.local.LocalCategoryDataProvider.allCategories
-import com.example.aricacityapp.data.model.CategoryContent
+import com.example.aricacityapp.data.model.Category
 import com.example.aricacityapp.ui.theme.AricaCityAppTheme
 
 class AricaCityHomeContent {
@@ -87,7 +87,7 @@ class AricaCityHomeContent {
     }
 
     @Composable
-    private fun CategoryCard(category: CategoryContent, modifier: Modifier = Modifier) {
+    private fun CategoryCard(category: Category, modifier: Modifier = Modifier) {
         Card(
             modifier = modifier,
             elevation = CardDefaults.cardElevation(10.dp)
@@ -112,7 +112,7 @@ class AricaCityHomeContent {
                     tint = Color.White
                 )
                 Text(
-                    stringResource(category.name),
+                    stringResource(category.title),
                     modifier = Modifier
                         .weight(1f),
                     color = Color.White,
