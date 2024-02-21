@@ -1,6 +1,12 @@
 <resources>
     <string name="app_name">AricaCityApp</string>
 
+    <string name="top_bar_categories">PANORAMAS</string>
+    <string name="category_1">CUTURA</string>
+    <string name="category_2">NATURALEZA</string>
+    <string name="category_3">PLAYAS</string>
+    <string name="category_4">DEPORTES</string>
+
     <string name="name_1">Terminal Asoagro Arica</string>
     <string name="description_1">El Terminal Asoagro es un lugar emblemático de Arica, mercado donde
         confluye toda la riqueza agrícola de la región. Encontrarás productos locales, originarios
