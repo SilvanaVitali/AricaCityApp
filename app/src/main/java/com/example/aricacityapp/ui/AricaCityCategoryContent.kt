@@ -1,5 +1,6 @@
 package com.example.aricacityapp.ui
 
+import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
@@ -36,102 +37,165 @@ import com.example.aricacityapp.data.model.Category
 import com.example.aricacityapp.data.model.Place
 import com.example.aricacityapp.ui.theme.AricaCityAppTheme
 
-class AricaCityCategoryContent {
-
-    @Composable
-    fun AricaCityListOnlyContent(
-        places: List<Place>,
-        category: Category,
-        onClick:(Place) -> Unit,
-        modifier: Modifier = Modifier,
-        contentPadding: PaddingValues = PaddingValues(0.dp)
+@Composable
+fun AricaCityListOnlyContent(
+    places: List<Place>,
+    category: Category,
+    onClick: (Place) -> Unit,
+    onBackPressed: () -> Unit,
+    modifier: Modifier = Modifier,
+    contentPadding: PaddingValues = PaddingValues(0.dp),
+) {
+    BackHandler {
+        onBackPressed()
+    }
+    LazyColumn(
+        contentPadding = contentPadding,
+        verticalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.padding_medium)),
+        modifier = modifier.padding(top = dimensionResource(R.dimen.padding_medium)),
     ) {
-        LazyColumn(
-            contentPadding = contentPadding,
-            verticalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.padding_medium)),
-            modifier = modifier.padding(top = dimensionResource(R.dimen.padding_medium)),
-        ) {
-            val placesByCategory = places.filter { it.category == category }
-            items(placesByCategory) {place ->
-                if(place.category == category) {
-                    AricaListItem(place = place)
-                }
-
+        val placesByCategory = places.filter { it.category == category }
+        items(placesByCategory) { place ->
+            if (place.category == category) {
+                AricaListItem(place = place, onClick = onClick)
             }
         }
     }
+}
 
-    @Composable
-    fun AricaListItem(place: Place, modifier: Modifier = Modifier) {
-        OutlinedCard(
-            border = BorderStroke(0.dp, Color.Transparent),
+@Composable
+private fun AricaListItem(
+    place: Place,
+    onClick: (Place) -> Unit,
+    modifier: Modifier = Modifier
+) {
+    OutlinedCard(
+        border = BorderStroke(0.dp, Color.Transparent),
+        modifier = Modifier
+            .shadow(
+                elevation = 4.dp,
+                shape = RoundedCornerShape(8.dp),
+            )
+    ) {
+        Row(
             modifier = Modifier
-                .shadow(
-                    elevation = 4.dp,
-                    shape = RoundedCornerShape(8.dp),
-                )
+                .fillMaxWidth()
+                .size(dimensionResource(R.dimen.card_size))
+                .padding(8.dp)
         ) {
-            Row(
+            Image(
+                painter = painterResource(place.image),
+                contentDescription = stringResource(place.name),
                 modifier = Modifier
-                    .fillMaxWidth()
-                    .size(dimensionResource(R.dimen.card_size))
-                    .padding(8.dp)
+                    .clip(MaterialTheme.shapes.small)
+            )
+            Spacer(Modifier.size(16.dp))
+            Column(
+                modifier = modifier,
+                verticalArrangement = Arrangement.Bottom,
             ) {
-                Image(
-                    painter = painterResource(place.image),
-                    contentDescription = stringResource(place.name),
+                Text(
+                    text = stringResource(place.name),
+                    style = MaterialTheme.typography.titleLarge
+                )
+                Spacer(modifier = Modifier.weight(1f))
+                Button(
+                    onClick = { onClick(place) },
+                    shape = CutCornerShape(
+                        topEnd = 50.dp,
+                        bottomEnd = 50.dp
+                    ),
+                    colors = ButtonDefaults.buttonColors(place.category.color),
                     modifier = Modifier
-                        .clip(MaterialTheme.shapes.small)
-                )
-                Spacer(Modifier.size(16.dp))
-                Column(
-                    modifier = modifier,
-                    verticalArrangement = Arrangement.Bottom,
-                    ) {
+                        .fillMaxWidth()
+                ) {
                     Text(
-                        text = stringResource(place.name),
-                        style = MaterialTheme.typography.titleLarge
+                        text = stringResource(R.string.more_information),
+                        style = MaterialTheme.typography.labelLarge
                     )
-                    Spacer(modifier = Modifier.weight(1f))
-                    Button(onClick = { /*TODO*/ },
-                        shape = CutCornerShape(
-                            topEnd = 50.dp,
-                            bottomEnd = 50.dp
-                        ),
-                        colors = ButtonDefaults.buttonColors(place.category.color),
-                        modifier = Modifier
-                            .fillMaxWidth()
-                        ) {
-                        Text(text = "ver mas",
-                            style = MaterialTheme.typography.labelLarge)
-                    }
                 }
-
             }
         }
     }
+}
 
-    @Preview(showBackground = true)
-    @Composable
-    fun CardPreview() {
-        AricaCityAppTheme {
-            Surface {
-                AricaListItem(LocalPlaceDataProvider.allPlaces[0])
-            }
+@Composable
+fun AricaCityListAndDetails(
+    places: List<Place>,
+    category: Category,
+    place: Place,
+    imageSize: Float,
+    onClick: (Place) -> Unit,
+    onBackPressed: () -> Unit,
+    modifier: Modifier = Modifier,
+    contentPadding: PaddingValues = PaddingValues(0.dp),
+) {
+    Row(modifier = modifier.padding(16.dp
+    )
+    ) {
+        AricaCityListOnlyContent(
+            places = places,
+            category = category,
+            onClick =  onClick ,
+            onBackPressed = { onBackPressed() },
+            contentPadding = PaddingValues(
+                top = contentPadding.calculateTopPadding()
+            ),
+            modifier = Modifier
+                .weight(2f)
+            )
+
+        AricaCityDetailContent(
+            selectedPlace = place,
+            imageSize = imageSize,
+            onBackPressed = {  },
+            contentPadding = PaddingValues(
+                top = contentPadding.calculateTopPadding()
+            ),
+            modifier = Modifier
+                .weight(3f)
+        )
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun CardPreview() {
+    AricaCityAppTheme {
+        Surface {
+            AricaListItem(LocalPlaceDataProvider.allPlaces[0], onClick = {})
         }
     }
+}
 
-    @Preview(showBackground = true)
-    @Composable
-    fun CardListPreview() {
-        AricaCityAppTheme {
-            Surface {
-                AricaCityListOnlyContent(
-                    places = LocalPlaceDataProvider.allPlaces,
-                    category = Category.SPORT,
-                    onClick = {}
-                )
-            }
+@Preview(showBackground = true)
+@Composable
+fun CardListPreview() {
+    AricaCityAppTheme {
+        Surface {
+            AricaCityListOnlyContent(
+                places = LocalPlaceDataProvider.allPlaces,
+                category = Category.SPORT,
+                onClick = {},
+                onBackPressed = {}
+            )
+        }
+    }
+}
+
+@Preview(showBackground = true, widthDp = 1000)
+@Composable
+fun AricaCityExpandedPreview() {
+    AricaCityAppTheme {
+        Surface {
+            AricaCityListAndDetails(
+                places = LocalPlaceDataProvider.allPlaces,
+                category = Category.SPORT,
+                imageSize = 1/2F,
+                place = LocalPlaceDataProvider.allPlaces[11],
+                onClick = {},
+                onBackPressed = {}
+            )
         }
     }
 }
